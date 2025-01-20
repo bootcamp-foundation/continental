@@ -25,8 +25,9 @@ def main():
             # users listimizga yangi foydalanuvchi qo`shamiz
             users_new = register(users)
             book_user(rooms, users_new)
+            print(users_new.name)
             users.append(users_new)
-
+            print(users[0].password)
         elif choose == '2':
             user_booking = login(users)
             if user_booking:

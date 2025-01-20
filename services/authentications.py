@@ -2,7 +2,7 @@ from models.user import User
 
 def is_user(users: list[User], username: str) -> bool:
     for user in users:
-        print(user[username])
+        print(user.username)
         if user.username == username:
             return True
     return False
