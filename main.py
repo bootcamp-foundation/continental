@@ -24,7 +24,7 @@ def main():
         if choose == '1':
             # users listimizga yangi foydalanuvchi qo`shamiz
             users_new = register(users)
-            book_user(rooms, users_new)
+            bookings.append(book_user(rooms, users_new))
             users.append(users_new)
         elif choose == '2':
             user_booking = login(users)
